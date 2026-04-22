@@ -1,0 +1,53 @@
+# API Map Config Template
+# Template cho YAML config quan ly cac nhom API con
+
+version: "1.0"
+module: "{module-name}"
+generated: "{timestamp}"
+
+# Cau truc folder hien tai
+structure:
+  root: "src/app/api/v1/{module}"
+  routes: []
+
+# Support folders can tao
+support_folders:
+  - services/
+  - schemas/
+  - types/
+  - constants/
+  - utils/
+
+# Cac nhom API con can refactor
+api_groups:
+  - name: "{group-name}"
+    path: "{relative-path}"
+    type: "sub-module" | "dynamic-route" | "action"
+
+    # File hien tai
+    current:
+      route_file: "{path}/route.ts"
+      has_business_logic: true | false
+      line_count: number
+
+    # Target structure
+    target:
+      service: "{group-name}.{action}.service.ts"
+      schema: "{group-name}.{action}.schema.ts"
+      type: "{group-name}.{action}.dto.ts"
+
+    # Trang thai refactor
+    status: "pending" | "in_progress" | "completed"
+    issues: []
+
+# Folders khong chuan can xu ly
+non_standard_folders:
+  - name: "lib/"
+    action: "migrate_to_utils"
+  - name: "helpers/"
+    action: "migrate_to_utils"
+  - name: "validators/"
+    action: "migrate_to_schemas"
+
+# Notes
+notes: []

@@ -1,0 +1,10 @@
+{
+  "auditor": "code-auditor",
+  "version": "1.0.0",
+  "baseline": {
+    "namingPatterns": [],
+    "structurePatterns": [],
+    "commonIssues": [],
+    "previousFindings": []
+  }
+}

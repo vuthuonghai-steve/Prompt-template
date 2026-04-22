@@ -1,0 +1,22 @@
+# E-commerce Prompt Research
+
+Research project for analyzing prompt templates across 7 phases of e-commerce development.
+
+## Quick Start
+
+```bash
+# Option 1: Run immediately with /loop
+/loop Execute RESEARCH_PROMPT.md with 10-minute intervals
+
+# Option 2: Setup Routine (24/7)
+# Go to claude.ai/code/routines and use RESEARCH_PROMPT.md
+```
+
+## Files
+- `STATE.md` - Heartbeat state (persistent context)
+- `RESEARCH_PROMPT.md` - Agent instructions
+- `README.md` - Full documentation
+- `reports/` - Research outputs
+
+## Progress
+Check `STATE.md` for current phase and findings.

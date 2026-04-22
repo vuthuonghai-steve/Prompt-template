@@ -1,0 +1,121 @@
+# Task List Output Template
+
+> **Usage**: Copy-paste template này và điền thông tin thực tế.
+> Sau khi điền xong, chạy `scripts/validate_output.py` để kiểm tra.
+
+---
+
+## Template
+
+```yaml
+tasks:
+  # Task 1
+  - id: 1
+    description: "{action} {target_name}"
+    target_area: "{path/to/area}"
+    instructions: |
+      {instructions_chung}
+      {instructions_rieng_neu_co}
+
+  # Task 2
+  - id: 2
+    description: "{action} {target_name}"
+    target_area: "{path/to/area}"
+    instructions: |
+      {instructions_chung}
+      {instructions_rieng_neu_co}
+
+  # Thêm task tiếp theo với id tăng dần...
+```
+
+---
+
+## Field Descriptions
+
+| Field | Bắt buộc | Mô tả |
+|-------|-----------|--------|
+| `id` | ✅ | Số thứ tự, bắt đầu từ 1, không trùng lặp |
+| `description` | ✅ | Mô tả ngắn gọn: `{action} {target_name}`. Ví dụ: `Audit order collections` |
+| `target_area` | ✅ | Đường dẫn folder/file trong codebase. Ví dụ: `collections/orders/` |
+| `instructions` | ✅ | Hướng dẫn chi tiết. Có thể là instructions chung cho tất cả tasks (copy-paste) hoặc instructions riêng cho từng task |
+
+---
+
+## Ví dụ thực tế
+
+### Ví dụ 1: Audit collections
+
+```yaml
+tasks:
+  - id: 1
+    description: "Audit order-related collections"
+    target_area: "collections/orders/"
+    instructions: |
+      Phan tich tat ca collections trong folder nay:
+      - Xac dinh fields, relationships
+      - Kiem tra access control
+      - Ghi nhan cac van de (neu co)
+
+  - id: 2
+    description: "Audit payment collections"
+    target_area: "collections/payments/"
+    instructions: |
+      Phan tich tat ca collections trong folder nay:
+      - Xac dinh fields, relationships
+      - Kiem tra access control
+      - Ghi nhan cac van de (neu co)
+```
+
+### Ví dụ 2: Build CRUD pages
+
+```yaml
+tasks:
+  - id: 1
+    description: "Build CRUD page for Product"
+    target_area: "collections/product/"
+    instructions: |
+      Tao trang admin CRUD cho Product collection:
+      - List view voi filter, pagination
+      - Form view voi create/edit
+      - Su dung pattern BouquetScreen
+
+  - id: 2
+    description: "Build CRUD page for Category"
+    target_area: "collections/category/"
+    instructions: |
+      Tao trang admin CRUD cho Category collection:
+      - List view voi filter, pagination
+      - Form view voi create/edit
+      - Su dung pattern BouquetScreen
+```
+
+### Ví dụ 3: Research API endpoints
+
+```yaml
+tasks:
+  - id: 1
+    description: "Research auth API endpoints"
+    target_area: "app/api/v1/auth/"
+    instructions: |
+      Tim va phan tich tat ca endpoints trong folder:
+      - Method (GET/POST/PUT/DELETE)
+      - Request/Response schema
+      - Authentication required?
+
+  - id: 2
+    description: "Research order API endpoints"
+    target_area: "app/api/v1/orders/"
+    instructions: |
+      Tim va phan tich tat ca endpoints trong folder:
+      - Method (GET/POST/PUT/DELETE)
+      - Request/Response schema
+      - Authentication required?
+```
+
+---
+
+## Notes
+
+- **Instructions chung**: Có thể viết 1 lần ở task đầu rồi copy-paste cho các task khác
+- **Description format**: Luôn format `{action} {target_name}` — ngắn gọn, dễ đọc
+- **Output**: Lưu vào `docs/analys/{theme}/{name-task}.yaml` trong workspace hiện tại
