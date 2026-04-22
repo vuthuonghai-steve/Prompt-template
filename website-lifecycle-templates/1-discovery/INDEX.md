@@ -6,7 +6,18 @@
 
 ---
 
-## 📋 Checklist
+## 🔗 Quick Navigation
+
+| Section | Description |
+|---------|-------------|
+| [Patterns](#-patterns) | Research methodologies, workflows |
+| [Prompts](#-prompts) | AI tool prompts for discovery |
+| [Templates](#-templates) | Document templates |
+| [Examples](#-examples) | Real-world examples |
+
+---
+
+## 📋 Discovery Checklist
 
 - [ ] Xác định mục tiêu business
 - [ ] Phân tích đối tượng người dùng (personas)
@@ -19,10 +30,33 @@
 
 ---
 
+## 🎨 Patterns
+
+Design patterns và best practices cho discovery phase.
+
+*Coming soon - patterns will be added here*
+
+---
+
+## 🤖 Prompts
+
+AI tool prompts for automation.
+
+| Tool | Purpose | Link |
+|------|---------|------|
+| **Claude Code** | Systematic workflow, 3-step process | [View](./prompts/claude-code-discovery.md) |
+| **Cursor Chat** | Codebase search, semantic analysis | [View](./prompts/cursor-requirements.md) |
+| **Devin AI** | Planning mode, comprehensive analysis | [View](./prompts/devin-discovery.md) |
+| **Perplexity** | Research, multi-source citations | [View](./prompts/perplexity-research.md) |
+
+---
+
 ## 📁 Templates
 
-| Template | Mục đích | Link |
-|----------|----------|------|
+Document templates và checklists.
+
+| Template | Purpose | Link |
+|----------|---------|------|
 | `requirements.md` | Business context, functional/non-functional requirements | [View](./templates/requirements.md) |
 | `user-stories.md` | User story format, acceptance criteria | [View](./templates/user-stories.md) |
 | `use-cases.md` | Main/alt/exception flows, test scenarios | [View](./templates/use-cases.md) |
@@ -30,14 +64,14 @@
 
 ---
 
-## 🎯 AI Tool Patterns
+## 💡 Examples
 
-| Tool | Focus | Key Patterns | Link |
-|------|-------|--------------|------|
-| **Claude Code** | Systematic workflow | 3-step, context gathering, memory | [View](./prompts/claude-code-discovery.md) |
-| **Cursor Chat** | Codebase search | Semantic search, LSP, parallel | [View](./prompts/cursor-requirements.md) |
-| **Devin AI** | Planning mode | Think-first, comprehensive analysis | [View](./prompts/devin-discovery.md) |
-| **Perplexity** | Research | Multi-source, citations, comparisons | [View](./prompts/perplexity-research.md) |
+Real-world examples và case studies.
+
+| Example | Description | Link |
+|---------|-------------|------|
+| `example-requirements-flower-shop.md` | Requirements doc for flower shop | [View](./examples/example-requirements-flower-shop.md) |
+| `example-user-stories-checkout.md` | User stories for checkout flow | [View](./examples/example-user-stories-checkout.md) |
 
 ---
 
@@ -57,9 +91,10 @@
 
 ---
 
-## 📖 Full Documentation
+## 📖 Resources
 
-[README.md](./README.md) - Comprehensive guide với workflows, best practices, examples
+- [README.md](./README.md) - Comprehensive guide
+- [STRUCTURE.md](../STRUCTURE.md) - Structure guidelines
 
 ---
 

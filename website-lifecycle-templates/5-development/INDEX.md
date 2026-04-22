@@ -2,10 +2,22 @@
 
 > **Mục tiêu**: Frontend + Backend implementation
 > **Đầu ra**: Working application, API, database
+> **Last Updated**: 2026-04-23
 
 ---
 
-## 📋 Checklist
+## 🔗 Quick Navigation
+
+| Section | Description |
+|---------|-------------|
+| [Patterns](#-patterns) | Development patterns, workflows |
+| [Prompts](#-prompts) | AI tool prompts for coding |
+| [Templates](#-templates) | Document templates |
+| [Examples](#-examples) | Real-world examples |
+
+---
+
+## 📋 Development Checklist
 
 ### Frontend
 - [ ] Setup project structure
@@ -28,26 +40,50 @@
 
 ---
 
-## 📁 Templates
+## 🎨 Patterns
 
-| Template | Mô tả |
-|----------|-------|
-| `project-structure.md` | Folder structure conventions |
-| `api-design.md` | RESTful API guidelines |
-| `database-schema.md` | Database design template |
-| `coding-standards.md` | Code style & conventions |
-| `git-workflow.md` | Branching & commit guidelines |
+Development patterns và best practices.
+
+*Coming soon - patterns will be added here*
 
 ---
 
-## 🎯 AI Prompts
+## 🤖 Prompts
 
-Sử dụng prompts từ:
-- **Cursor Agent**: Full-stack development
-- **Windsurf**: Code generation & refactoring
-- **Replit Agent**: Rapid prototyping
-- **Claude Code**: Systematic implementation
-- **VSCode Agent**: IDE-integrated coding
+AI tool prompts for automation.
+
+| Tool | Purpose | Link |
+|------|---------|------|
+| **Cursor Agent** | Full-stack development | [View](./prompts/cursor-coding-prompt.md) |
+| **Windsurf** | Code generation & refactoring | [View](./prompts/windsurf-refactor-prompt.md) |
+
+---
+
+## 📁 Templates
+
+Document templates và checklists.
+
+| Template | Purpose | Link |
+|----------|---------|------|
+| `project-structure.md` | Folder structure conventions | [View](./templates/project-structure.md) |
+| `api-design.md` | RESTful API guidelines | [View](./templates/api-design.md) |
+| `database-schema.md` | Database design template | [View](./templates/database-schema.md) |
+| `coding-standards.md` | Code style & conventions | [View](./templates/coding-standards.md) |
+| `git-workflow.md` | Branching & commit guidelines | [View](./templates/git-workflow.md) |
+
+---
+
+## 💡 Examples
+
+Real-world examples và case studies.
+
+*Coming soon - examples will be added here*
+
+---
+
+## 📖 Resources
+
+- [STRUCTURE.md](../STRUCTURE.md) - Structure guidelines
 
 ---
 

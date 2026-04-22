@@ -2,10 +2,22 @@
 
 > **Mục tiêu**: Visual design, components, responsive, accessibility
 > **Đầu ra**: High-fidelity designs, prototype, design system
+> **Last Updated**: 2026-04-23
 
 ---
 
-## 📋 Checklist
+## 🔗 Quick Navigation
+
+| Section | Description |
+|---------|-------------|
+| [Patterns](#-patterns) | Design patterns, workflows |
+| [Prompts](#-prompts) | AI tool prompts for design |
+| [Templates](#-templates) | Document templates |
+| [Examples](#-examples) | Real-world examples |
+
+---
+
+## 📋 Design Checklist
 
 - [ ] Chuyển wireframe thành visual design
 - [ ] Định nghĩa color palette & typography
@@ -18,23 +30,45 @@
 
 ---
 
-## 📁 Templates
+## 🎨 Patterns
 
-| Template | Purpose | When to Use |
-|----------|---------|-------------|
-| [design-system.md](templates/design-system.md) | Color, typography, spacing system | Start of design phase |
-| [component-spec.md](templates/component-spec.md) | Component documentation | For each major component |
-| [accessibility.md](templates/accessibility.md) | WCAG AA compliance guide | Throughout development |
-| [responsive-design.md](templates/responsive-design.md) | Mobile-first patterns | For all layouts |
+Design patterns và best practices.
+
+| Pattern | Purpose | Link |
+|---------|---------|------|
+| *Coming soon* | Design patterns will be added here | - |
 
 ---
 
-## 🤖 AI Tool Patterns
+## 🤖 Prompts
 
-| Source | Focus | Best For |
-|--------|-------|----------|
-| [lovable-design-patterns.md](prompts/lovable-design-patterns.md) | Design system, semantic tokens | React + Vite + Tailwind |
-| [v0-design-patterns.md](prompts/v0-design-patterns.md) | Color limits, mobile-first | Next.js + shadcn/ui |
+AI tool prompts for automation.
+
+| Tool | Purpose | Link |
+|------|---------|------|
+| **Lovable** | Design system, semantic tokens for React + Vite + Tailwind | [View](./prompts/lovable-design-patterns.md) |
+| **v0** | Color limits, mobile-first for Next.js + shadcn/ui | [View](./prompts/v0-design-patterns.md) |
+
+---
+
+## 📁 Templates
+
+Document templates và checklists.
+
+| Template | Purpose | Link |
+|----------|---------|------|
+| `design-system.md` | Color, typography, spacing system | [View](./templates/design-system.md) |
+| `component-spec.md` | Component documentation | [View](./templates/component-spec.md) |
+| `accessibility.md` | WCAG AA compliance guide | [View](./templates/accessibility.md) |
+| `responsive-design.md` | Mobile-first patterns | [View](./templates/responsive-design.md) |
+
+---
+
+## 💡 Examples
+
+Real-world examples và case studies.
+
+*Coming soon - examples will be added here*
 
 ---
 
@@ -62,17 +96,12 @@
 
 ---
 
-## 📖 Full Documentation
+## 📖 Resources
 
-See [README.md](README.md) for complete guide with examples and best practices.
+- [STRUCTURE.md](../STRUCTURE.md) - Structure guidelines
 
 ---
 
 ## 🔗 Navigation
 
-[← Previous: Planning](../2-planning/INDEX.md) | [Next: Development →](../4-development/INDEX.md)
-
----
-
-**Last Updated**: 2026-04-23  
-**Status**: ✅ Complete
+[← Previous: Planning](../2-planning/INDEX.md) | [Next: Content →](../4-content/INDEX.md)
