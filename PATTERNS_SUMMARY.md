@@ -1,14 +1,14 @@
 # Patterns Summary
 
 > **Created**: 2026-04-22
-> **Source**: System prompts from 11 AI tools
+> **Source**: System prompts from 7 listed AI tools
 > **Total Patterns**: 18
 
 ---
 
 ## Overview
 
-Patterns extracted từ system prompts của leading AI coding assistants, organized theo 7 phases của software development lifecycle.
+Patterns extracted từ system prompts của listed AI coding assistants, organized theo 7 phases của software development lifecycle. Treat these as internally synthesized pattern records unless the original prompt artifacts are independently validated.
 
 ## Sources Analyzed
 
@@ -174,9 +174,9 @@ Reference patterns when:
 ## Next Steps
 
 1. ✅ Patterns extracted and documented
-2. 🔄 Create examples/ for each phase
-3. 🔄 Complete Phase 4 (Content) and Phase 6 (Testing)
-4. 📋 Update INDEX.md files to reference patterns
+2. ✅ Phase 6 and Phase 7 indexes now reference available patterns
+3. 🔄 Validate synthesized/source-derived pattern records against archived source evidence
+4. 📋 Add missing standalone runbooks where gaps remain (mock strategy, monitoring/alerting, dependency updates)
 
 ---
 

@@ -37,7 +37,10 @@
 
 Maintenance patterns và best practices.
 
-*Coming soon - patterns will be added here*
+| Pattern | Description | Link |
+|---------|-------------|------|
+| Code Quality Standards | Metrics, lint gates, code review criteria | [View](./patterns/pattern-code-quality-standards.md) |
+| Refactoring Maintainability | Safe refactoring workflow with tests and rollback | [View](./patterns/pattern-refactoring-maintainability.md) |
 
 ---
 
@@ -64,6 +67,7 @@ Document templates và checklists.
 |----------|---------|------|
 | `maintenance-log.md` | Change log template | [View](./templates/maintenance-log.md) |
 | `performance-report.md` | Performance metrics tracking | [View](./templates/performance-report.md) |
+| `performance-baseline.md` | Baseline metrics, thresholds, and regression targets | [View](./templates/performance-baseline.md) |
 | `feature-request.md` | New feature proposal | [View](./templates/feature-request.md) |
 | `incident-report.md` | Production incident template | [View](./templates/incident-report.md) |
 

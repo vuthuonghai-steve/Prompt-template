@@ -67,49 +67,49 @@ phases:
 ```yaml
 discovery:
   - title: "Product Manager PRD Generator"
-    source: "awesome-chatgpt-prompts"
+    source: "external-verified: awesome-chatgpt-prompts"
     quality: 9
     category: "Requirements Documentation"
   - title: "Startup Idea Generator"
-    source: "awesome-chatgpt-prompts"
+    source: "external-verified: awesome-chatgpt-prompts"
     quality: 8
     category: "Business Model Canvas"
   - title: "Web Design Consultant"
-    source: "awesome-chatgpt-prompts"
+    source: "external-verified: awesome-chatgpt-prompts"
     quality: 7
     category: "UX/UI Planning"
   - title: "Developer Relations Consultant"
-    source: "awesome-chatgpt-prompts"
+    source: "external-verified: awesome-chatgpt-prompts"
     quality: 8
     category: "Competitive Analysis"
   - title: "UX/UI Developer"
-    source: "awesome-chatgpt-prompts"
+    source: "external-verified: awesome-chatgpt-prompts"
     quality: 7
     category: "User Persona"
 planning:
   - title: "Information Architecture Prompt for E-commerce Sites"
-    source: "https://www.promptingguide.ai/applications/information-architecture"
+    source: "external-unverified-candidate: https://www.promptingguide.ai/applications/information-architecture"
     quality: 8
     category: "Information Architecture"
   - title: "AI Sitemap Generator Prompt Template"
-    source: "https://www.sitemapai.com/templates/web-development"
+    source: "external-unverified-candidate: https://www.sitemapai.com/templates/web-development"
     quality: 7
     category: "Sitemap Generation"
   - title: "Wireframe Prompt Engineering Framework"
-    source: "https://uxdesign.cc/wireframe-prompts-ai-2026"
+    source: "external-unverified-candidate: https://uxdesign.cc/wireframe-prompts-ai-2026"
     quality: 9
     category: "Wireframing"
   - title: "User Flow Diagram AI Prompt"
-    source: "https://www.flowchart.ai/templates/user-flows"
+    source: "external-unverified-candidate: https://www.flowchart.ai/templates/user-flows"
     quality: 8
     category: "User Flows"
   - title: "Web Application Architecture Planning Prompt"
-    source: "https://architectureprompts.dev/planning-phase"
+    source: "external-unverified-candidate: https://architectureprompts.dev/planning-phase"
     quality: 7
     category: "Architecture Planning"
 design:
   - title: "UI Component Design Prompt"
-    source: "awesome-chatgpt-prompts"
+    source: "external-unverified-candidate: awesome-chatgpt-prompts"
     quality: 8
     category: "Component Design"
   - title: "Design System Generator"
@@ -117,7 +117,7 @@ design:
     quality: 9
     category: "Design Systems"
   - title: "Responsive Layout Prompt"
-    source: "uxdesign.cc"
+    source: "external-unverified-candidate: uxdesign.cc"
     quality: 8
     category: "Responsive Design"
   - title: "Color Palette & Typography System"
@@ -236,6 +236,6 @@ overall_quality: 8.0
 - Total templates: 35
 - Overall average quality: 8.0/10
 - Report saved: reports/maintenance/2026-04-22-2228.md
-- WebSearch tool malfunction: Used synthesis approach throughout
+- WebSearch tool malfunction: Used synthesis approach throughout; candidate external URLs remain unverified until a follow-up validation pass
 - Research duration: ~5.5 hours (16:51 - 22:28)
-- Status: SUCCESS
+- Status: SUCCESS (research inventory complete; production-standard source validation still pending)

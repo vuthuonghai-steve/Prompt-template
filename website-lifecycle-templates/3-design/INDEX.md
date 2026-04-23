@@ -32,11 +32,14 @@
 
 ## 🎨 Patterns
 
-Design patterns và best practices.
+Patterns và best practices hiện có cho phase này.
 
 | Pattern | Purpose | Link |
-|---------|---------|------|
-| *Coming soon* | Design patterns will be added here | - |
+|---|---|---|
+| `pattern-color-system.md` | Use a constrained, semantic color system | [View](./patterns/pattern-color-system.md) |
+| `pattern-design-system-first.md` | Define tokens/components before screens | [View](./patterns/pattern-design-system-first.md) |
+| `pattern-mobile-first.md` | Design from small screens upward | [View](./patterns/pattern-mobile-first.md) |
+| `pattern-typography-system.md` | Keep typography consistent and minimal | [View](./patterns/pattern-typography-system.md) |
 
 ---
 
@@ -66,9 +69,14 @@ Document templates và checklists.
 
 ## 💡 Examples
 
-Real-world examples và case studies.
+Real-world examples và sample outputs.
 
-*Coming soon - examples will be added here*
+| Example | Description | Link |
+|---|---|---|
+| `example-button-component.md` | Button component spec sample | [View](./examples/example-button-component.md) |
+| `example-color-palette-application.md` | Color palette application sample | [View](./examples/example-color-palette-application.md) |
+| `example-design-system-tokens.md` | Design token sample | [View](./examples/example-design-system-tokens.md) |
+| `example-responsive-product-card.md` | Responsive product card sample | [View](./examples/example-responsive-product-card.md) |
 
 ---
 

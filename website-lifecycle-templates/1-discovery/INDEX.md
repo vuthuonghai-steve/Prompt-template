@@ -32,9 +32,13 @@
 
 ## 🎨 Patterns
 
-Design patterns và best practices cho discovery phase.
+Patterns và best practices hiện có cho phase này.
 
-*Coming soon - patterns will be added here*
+| Pattern | Purpose | Link |
+|---|---|---|
+| `pattern-context-gathering.md` | Systematic context collection before decisions | [View](./patterns/pattern-context-gathering.md) |
+| `pattern-parallel-tool-calls.md` | Parallelize independent discovery work | [View](./patterns/pattern-parallel-tool-calls.md) |
+| `pattern-semantic-search.md` | Find relevant context by meaning, not exact keywords | [View](./patterns/pattern-semantic-search.md) |
 
 ---
 
@@ -66,12 +70,13 @@ Document templates và checklists.
 
 ## 💡 Examples
 
-Real-world examples và case studies.
+Real-world examples và sample outputs.
 
 | Example | Description | Link |
-|---------|-------------|------|
-| `example-requirements-flower-shop.md` | Requirements doc for flower shop | [View](./examples/example-requirements-flower-shop.md) |
-| `example-user-stories-checkout.md` | User stories for checkout flow | [View](./examples/example-user-stories-checkout.md) |
+|---|---|---|
+| `example-requirements-flower-shop.md` | Flower shop requirements sample | [View](./examples/example-requirements-flower-shop.md) |
+| `example-use-case-order-flow.md` | Order-flow use case sample | [View](./examples/example-use-case-order-flow.md) |
+| `example-user-stories-checkout.md` | Checkout user stories sample | [View](./examples/example-user-stories-checkout.md) |
 
 ---
 
@@ -93,7 +98,7 @@ Real-world examples và case studies.
 
 ## 📖 Resources
 
-- [README.md](./README.md) - Comprehensive guide
+- [Overview](../README.md) - Main project overview
 - [STRUCTURE.md](../STRUCTURE.md) - Structure guidelines
 
 ---

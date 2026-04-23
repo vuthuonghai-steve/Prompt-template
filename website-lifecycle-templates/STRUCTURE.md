@@ -1,243 +1,87 @@
-# Website Lifecycle Templates - Structure Guide
+# Structure Guide
 
-> **Standardized 4-Directory Architecture**
-> **Last Updated**: 2026-04-23
+> Quy ước tổ chức tài liệu hiện tại cho `website-lifecycle-templates/`.
 
 ---
 
-## 📁 Standard Structure
+## Main surface
 
-Mỗi phase tuân theo cấu trúc 4-directory chuẩn:
+Root chỉ nên giữ thông tin chính:
 
+```text
+README.md       # Tổng quan
+QUICK-START.md  # Hướng dẫn dùng nhanh
+STRUCTURE.md    # Quy ước tổ chức
+STATUS.md       # Inventory verified
+archive/        # Lịch sử/iteration reports
+1-discovery/ ... 7-maintenance/
 ```
+
+Các báo cáo quá trình, iteration notes và extraction summaries nên để trong `archive/`, không để lẫn với tài liệu sử dụng hằng ngày.
+
+---
+
+## Phase layout
+
+Mỗi phase nên có đúng các phần chính:
+
+```text
 {phase}/
-├── patterns/     # Design patterns, best practices, workflows
-├── prompts/      # AI tool prompts (Claude, ChatGPT, v1, etc.)
-├── templates/    # Document templates, checklists, forms
-└── examples/     # Real-world examples, case studies
+├── INDEX.md
+├── templates/
+├── prompts/
+├── patterns/
+└── examples/
 ```
 
----
-
-## 🎯 Directory Purposes
-
-### `patterns/`
-**Chứa**: Architecture patterns, best practices, workflows, decision frameworks
-
-**Ví dụ**:
-- `pattern.research-methodology.md` - Cách research hiệu quả
-- `pattern.stakeholder-interview.md` - Framework phỏng vấn stakeholder
-- `pattern.design-system-setup.md` - Thiết lập design system
-
-**Naming**: `pattern.{name}.md`
-
----
-
-### `prompts/`
-**Chứa**: AI tool prompts cho automation tasks
-
-**Ví dụ**:
-- `prompt.claude.competitor-analysis.md` - Claude prompt phân tích đối thủ
-- `prompt.v1.wireframe-generation.md` - v1 prompt tạo wireframe
-- `prompt.chatgpt.content-outline.md` - ChatGPT prompt outline content
-
-**Naming**: `prompt.{tool}.{task}.md`
-
-**Supported tools**: `claude`, `chatgpt`, `v1`, `cursor`, `windsurf`, `copilot`
-
----
+### `INDEX.md`
+Cổng vào của phase. Phải liệt kê link tới templates/prompts/patterns/examples hiện có, không để `Coming soon` nếu file đã tồn tại.
 
 ### `templates/`
-**Chứa**: Document templates, checklists, forms
+Tài liệu có thể copy vào project thật: checklist, report, plan, spec, log.
 
-**Ví dụ**:
-- `template.discovery-report.md` - Template báo cáo discovery
-- `template.design-brief.md` - Template design brief
-- `template.test-plan.md` - Template test plan
+### `prompts/`
+Prompt dùng với Claude Code, Cursor, Windsurf, Devin, Lovable, v0 hoặc AI tool khác.
 
-**Naming**: `template.{name}.md`
-
----
+### `patterns/`
+Best practices, workflow, decision framework, cách làm có thể tái sử dụng.
 
 ### `examples/`
-**Chứa**: Real-world examples, case studies, sample outputs
-
-**Ví dụ**:
-- `example.ecommerce-discovery.md` - Discovery cho e-commerce project
-- `example.saas-design-system.md` - Design system cho SaaS
-- `example.api-test-suite.md` - Test suite cho API
-
-**Naming**: `example.{name}.md`
+Sample output hoặc case study giúp người dùng hiểu cách điền/áp dụng template.
 
 ---
 
-## 📋 Naming Conventions
+## Naming convention thực tế
 
-### File Naming Pattern
+Repo hiện dùng kebab-case, không bắt buộc prefix dạng `template.`:
+
+```text
+templates/test-plan.md
+prompts/prompt-cursor-testing.md
+patterns/pattern-test-driven-validation.md
+examples/example-performance-report.md
 ```
-{type}.{tool?}.{name}.md
-```
 
-| Type | Tool (optional) | Name | Example |
-|------|----------------|------|---------|
-| `pattern` | - | `research-methodology` | `pattern.research-methodology.md` |
-| `prompt` | `claude` | `competitor-analysis` | `prompt.claude.competitor-analysis.md` |
-| `template` | - | `discovery-report` | `template.discovery-report.md` |
-| `example` | - | `ecommerce-discovery` | `example.ecommerce-discovery.md` |
-
-### Rules
-- ✅ Lowercase, kebab-case
-- ✅ Descriptive names (< 50 chars)
-- ✅ Tool prefix for prompts only
-- ❌ No spaces, underscores, or special chars
+Quy tắc:
+- lowercase;
+- kebab-case;
+- tên mô tả rõ mục đích;
+- với prompts nên có tool hoặc task trong tên nếu hữu ích;
+- với patterns/examples nên dùng prefix `pattern-` / `example-` khi tạo file mới để dễ scan.
 
 ---
 
-## ➕ Adding New Content
+## Khi thêm tài liệu mới
 
-### Step 1: Identify Type
-```
-Is it a...
-├── Workflow/Pattern? → patterns/
-├── AI Prompt? → prompts/
-├── Document Template? → templates/
-└── Real Example? → examples/
-```
-
-### Step 2: Choose Phase
-```
-1-discovery     → Research, requirements, stakeholder analysis
-2-planning      → Project planning, roadmap, resource allocation
-3-design        → UI/UX design, wireframes, prototypes
-4-content       → Content strategy, copywriting, SEO
-5-development   → Coding, implementation, integration
-6-testing       → QA, testing, bug tracking
-7-maintenance   → Monitoring, updates, optimization
-```
-
-### Step 3: Create File
-```bash
-# Pattern
-touch {phase}/patterns/pattern.{name}.md
-
-# Prompt
-touch {phase}/prompts/prompt.{tool}.{task}.md
-
-# Template
-touch {phase}/templates/template.{name}.md
-
-# Example
-touch {phase}/examples/example.{name}.md
-```
-
-### Step 4: Update INDEX.md
-Add entry to phase's INDEX.md:
-```markdown
-## Patterns
-- [Pattern Name](patterns/pattern.{name}.md) - Brief description
-
-## Prompts
-- [Prompt Name](prompts/prompt.{tool}.{task}.md) - Brief description
-```
+1. Chọn đúng phase.
+2. Chọn đúng thư mục: `templates`, `prompts`, `patterns`, hoặc `examples`.
+3. Tạo file kebab-case.
+4. Cập nhật `INDEX.md` của phase.
+5. Nếu tài liệu liên quan reliability/security/performance, thêm owner/evidence/verification/sign-off fields.
+6. Chạy link check hoặc kiểm tra thủ công các link Markdown mới.
 
 ---
 
-## 🔗 Integration Guidelines
+## Current inventory
 
-### Cross-Phase References
-```markdown
-**Related**:
-- [2-Planning: Project Brief Template](../2-planning/templates/template.project-brief.md)
-- [3-Design: Design System Pattern](../3-design/patterns/pattern.design-system.md)
-```
-
-### Internal References
-```markdown
-**See also**:
-- [Research Pattern](patterns/pattern.research-methodology.md)
-- [Discovery Template](templates/template.discovery-report.md)
-```
-
-### External References
-```markdown
-**Resources**:
-- [Nielsen Norman Group](https://www.nngroup.com/)
-- [Smashing Magazine](https://www.smashingmagazine.com/)
-```
-
----
-
-## ✅ Consistency Checklist
-
-### Before Adding Content
-- [ ] Correct directory (patterns/prompts/templates/examples)?
-- [ ] Naming convention followed?
-- [ ] Phase appropriate?
-- [ ] INDEX.md updated?
-
-### After Adding Content
-- [ ] Cross-references working?
-- [ ] No duplicate content?
-- [ ] Frontmatter complete (if applicable)?
-- [ ] Examples clear and actionable?
-
----
-
-## 📊 Current Structure
-
-```
-website-lifecycle-templates/
-├── 1-discovery/
-│   ├── patterns/
-│   ├── prompts/
-│   ├── templates/
-│   └── examples/
-├── 2-planning/
-│   ├── patterns/
-│   ├── prompts/
-│   ├── templates/
-│   └── examples/
-├── 3-design/
-│   ├── patterns/
-│   ├── prompts/
-│   ├── templates/
-│   └── examples/
-├── 4-content/
-│   ├── patterns/
-│   ├── prompts/
-│   ├── templates/
-│   └── examples/
-├── 5-development/
-│   ├── patterns/
-│   ├── prompts/
-│   ├── templates/
-│   └── examples/
-├── 6-testing/
-│   ├── patterns/
-│   ├── prompts/
-│   ├── templates/
-│   └── examples/
-└── 7-maintenance/
-    ├── patterns/
-    ├── prompts/
-    ├── templates/
-    └── examples/
-```
-
----
-
-## 🎯 Quick Reference
-
-| Task | Command |
-|------|---------|
-| Add pattern | `touch {phase}/patterns/pattern.{name}.md` |
-| Add prompt | `touch {phase}/prompts/prompt.{tool}.{task}.md` |
-| Add template | `touch {phase}/templates/template.{name}.md` |
-| Add example | `touch {phase}/examples/example.{name}.md` |
-| Update index | Edit `{phase}/INDEX.md` |
-| Verify structure | `find . -type d -maxdepth 2` |
-
----
-
-**Maintained by**: attach_by_security team
-**Version**: 1.0.0
+Xem [`STATUS.md`](./STATUS.md) để biết số lượng verified mới nhất.

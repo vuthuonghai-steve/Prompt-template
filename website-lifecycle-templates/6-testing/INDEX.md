@@ -2,7 +2,7 @@
 
 > **Mục tiêu**: QA, performance, security, deployment
 > **Đầu ra**: Test reports, production deployment
-> **Completion**: 100%
+> **Artifact inventory completion**: 100% (source validation pending for synthesized material)
 > **Last Updated**: 2026-04-23
 
 ---
@@ -38,13 +38,13 @@
 
 ## 🎨 Patterns
 
-Testing patterns và best practices.
+Testing patterns và best practices. Standalone Test Pyramid/Mock Strategy docs are not separate files yet; related guidance lives in `test-plan.md` and `pattern-test-driven-validation.md`.
 
 | Pattern | Description | Link |
 |---------|-------------|------|
-| Test Pyramid | Unit (70%) → Integration (20%) → E2E (10%) | *Coming soon* |
-| TDD Workflow | Red → Green → Refactor cycle | *Coming soon* |
-| Mock Strategy | When to mock vs real dependencies | *Coming soon* |
+| Test-Driven Validation | Red → Green → Refactor cycle, AAA structure, coverage targets | [View](./patterns/pattern-test-driven-validation.md) |
+| Debug Logging | Structured logs, request IDs, performance/error traces | [View](./patterns/pattern-debug-logging.md) |
+| Browser Automation Testing | Critical journey automation and browser coverage | [View](./patterns/pattern-browser-automation-testing.md) |
 
 ---
 

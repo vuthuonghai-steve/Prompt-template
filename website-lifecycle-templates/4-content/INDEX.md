@@ -31,17 +31,22 @@
 
 ## 🎨 Patterns
 
-Content patterns và best practices.
+Patterns và best practices hiện có cho phase này.
 
-*Coming soon - patterns will be added here*
+| Pattern | Purpose | Link |
+|---|---|---|
+| `pattern-seo-best-practices.md` | SEO structure and on-page content practices | [View](./patterns/pattern-seo-best-practices.md) |
 
 ---
 
 ## 🤖 Prompts
 
-AI tool prompts for automation.
+AI prompts for content work.
 
-*Coming soon - prompts will be added here*
+| Prompt | Purpose | Link |
+|---|---|---|
+| `prompt-product-descriptions.md` | Generate product descriptions | [View](./prompts/prompt-product-descriptions.md) |
+| `prompt-seo-content.md` | Draft SEO-oriented content | [View](./prompts/prompt-seo-content.md) |
 
 ---
 
@@ -60,11 +65,11 @@ Document templates và checklists.
 
 ## 💡 Examples
 
-Real-world examples và case studies.
+Real-world examples và sample outputs.
 
 | Example | Description | Link |
-|---------|-------------|------|
-| `example-product-description-rose-bouquet.md` | Product description for rose bouquet | [View](./examples/example-product-description-rose-bouquet.md) |
+|---|---|---|
+| `example-product-description-rose-bouquet.md` | Rose bouquet product description sample | [View](./examples/example-product-description-rose-bouquet.md) |
 
 ---
 

@@ -42,9 +42,14 @@
 
 ## 🎨 Patterns
 
-Development patterns và best practices.
+Patterns và best practices hiện có cho phase này.
 
-*Coming soon - patterns will be added here*
+| Pattern | Purpose | Link |
+|---|---|---|
+| `pattern-file-edit-validation.md` | Edit files and validate immediately | [View](./patterns/pattern-file-edit-validation.md) |
+| `pattern-immediately-runnable-code.md` | Prefer complete runnable code | [View](./patterns/pattern-immediately-runnable-code.md) |
+| `pattern-non-blocking-execution.md` | Proceed with safe assumptions | [View](./patterns/pattern-non-blocking-execution.md) |
+| `pattern-semantic-code-search.md` | Search code semantically before edits | [View](./patterns/pattern-semantic-code-search.md) |
 
 ---
 
@@ -75,9 +80,14 @@ Document templates và checklists.
 
 ## 💡 Examples
 
-Real-world examples và case studies.
+Real-world examples và sample outputs.
 
-*Coming soon - examples will be added here*
+| Example | Description | Link |
+|---|---|---|
+| `example-api-service-implementation.md` | API service implementation sample | [View](./examples/example-api-service-implementation.md) |
+| `example-form-validation.md` | Form validation sample | [View](./examples/example-form-validation.md) |
+| `example-react-component-hooks.md` | React hooks component sample | [View](./examples/example-react-component-hooks.md) |
+| `example-state-management-redux.md` | Redux state management sample | [View](./examples/example-state-management-redux.md) |
 
 ---
 

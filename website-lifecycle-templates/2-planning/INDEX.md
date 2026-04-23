@@ -31,9 +31,13 @@
 
 ## 🎨 Patterns
 
-Design patterns và best practices cho planning phase.
+Patterns và best practices hiện có cho phase này.
 
-*Coming soon - patterns will be added here*
+| Pattern | Purpose | Link |
+|---|---|---|
+| `pattern-memory-system.md` | Persist project context and decisions | [View](./patterns/pattern-memory-system.md) |
+| `pattern-plan-mode.md` | Plan complex work before implementation | [View](./patterns/pattern-plan-mode.md) |
+| `pattern-todo-management.md` | Track multi-step work clearly | [View](./patterns/pattern-todo-management.md) |
 
 ---
 
@@ -70,9 +74,12 @@ Document templates và checklists.
 
 ## 💡 Examples
 
-Real-world examples và case studies.
+Real-world examples và sample outputs.
 
-*Coming soon - examples will be added here*
+| Example | Description | Link |
+|---|---|---|
+| `example-sitemap-flower-shop.md` | Flower shop sitemap sample | [View](./examples/example-sitemap-flower-shop.md) |
+| `example-tech-stack-ecommerce.md` | E-commerce tech-stack decision sample | [View](./examples/example-tech-stack-ecommerce.md) |
 
 ---
 
