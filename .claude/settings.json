@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "allowDevCommands": true
+  },
+  "envWhitelist": ["CI", "NODE_ENV", "DEBUG"],
+  "expandPath": {
+    "@siin": "/home/steve/Work-space/siin",
+    "@src": "/home/steve/Work-space/siin/src"
+  },
+  "customCommands": {
+    "test": {
+      "description": "Run project tests",
+      "command": "npm test"
+    }
+  }
+}
